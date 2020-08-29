@@ -1,0 +1,832 @@
+.dashboard-box .dashboard-title,
+.dashboard-title {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dashboard-box .dashboard-title h4,
+h4.dashboard-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.dashboard-box .dashboard-title span {
+  margin-left: 30px;
+  background-color: #fafafa;
+  padding: 2px 16px;
+  border-radius: 2px;
+  text-transform: capitalize;
+  color: #ef3f3e;
+  cursor: pointer;
+}
+
+.dashboard-box .dashboard-detail {
+  margin-bottom: 10px;
+}
+
+.dashboard-box .dashboard-detail ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dashboard-box .dashboard-detail ul li .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard-box .dashboard-detail ul li .details h6 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.dashboard-box .dashboard-detail ul li .details span {
+  margin-left: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 2px;
+  text-transform: capitalize;
+  color: #ef3f3e;
+  cursor: pointer;
+}
+
+.dashboard-box .dashboard-detail ul li .details .left {
+  width: 150px;
+  margin-right: 15px;
+}
+
+.dashboard-box .dashboard-detail ul li .details .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dashboard-box .dashboard-detail ul li .details .right h6 {
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+.dashboard-box .dashboard-detail ul li:last-child {
+  margin-bottom: 0;
+}
+
+.dashboard-box .dashboard-detail .booking-box {
+  background-color: #fbfbfb;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid #fff; */
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-box .dashboard-detail .booking-box .date-box {
+  display: inline-block;
+  text-transform: capitalize;
+  width: 70px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.dashboard-box .dashboard-detail .booking-box .date-box span {
+  line-height: 1.3;
+  display: block;
+  font-weight: 500;
+}
+
+.dashboard-box .dashboard-detail .booking-box .date-box span.day {
+  color: #adb0b8;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box .dashboard-detail .booking-box .date-box span.date {
+  color: black;
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box .dashboard-detail .booking-box .date-box span.month {
+  color: #ef3f3e;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box .dashboard-detail .booking-box .detail-middle {
+  width: 75%;
+}
+
+.dashboard-box .dashboard-detail .booking-box .detail-middle .media {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+}
+.dashboard-box .dashboard-detail .booking-box .detail-middle .media .icon {
+  /* display: table-cell; */
+}
+.dashboard-box .dashboard-detail .booking-box .detail-middle .media .icon i {
+  padding: 8px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-box
+  .dashboard-detail
+  .booking-box
+  .detail-middle
+  .media
+  .detail-media-body {
+  margin-left: 20px;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .booking-box
+  .detail-middle
+  .media
+  .detail-media-body
+  h6 {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .booking-box
+  .detail-middle
+  .media
+  .detail-media-body
+  p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #808080;
+  text-transform: capitalize;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .booking-box
+  .detail-middle
+  .media
+  .detail-media-body
+  p
+  span {
+  font-weight: 500;
+  color: #3c3c3c;
+}
+
+.dashboard-box .dashboard-detail .booking-box .detail-last {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-box .dashboard-detail .booking-box .detail-last span {
+  font-size: 13px;
+  margin-right: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.dashboard-box .cancel-booking {
+  font-size: 22px;
+  display: inline-block;
+  color: #d91718;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card {
+  width: 100%;
+  min-height: 183px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  position: relative;
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 1px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.04) 3px,
+      rgba(255, 255, 255, 0.05) 4px
+    ),
+    -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 40%, rgba(
+            255,
+            255,
+            255,
+            0.2
+          )
+          70%, rgba(255, 255, 255, 0) 90%);
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .card-number
+  h3 {
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  color: white;
+  font-weight: 600;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .valid-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .valid-detail
+  .title
+  span {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .valid-detail
+  .date
+  h3 {
+  margin-bottom: 0;
+  color: white;
+  margin-left: 15px;
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .valid-detail
+  .primary {
+  margin-left: auto;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .valid-detail
+  .primary
+  .badge {
+  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .name-detail {
+  margin-top: calc(10px + (25 - 10) * ((100vw - 320px) / (1920 - 320)));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .name-detail
+  .name {
+  width: 100%;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .name-detail
+  .name
+  h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 0;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .name-detail
+  .card-img {
+  display: inline-block;
+  margin-left: auto;
+  text-align: right;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card
+  .card-details
+  .name-detail
+  .card-img
+  img {
+  width: 40px;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card .edit-card {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card .edit-card a {
+  padding: 0 10px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card.master {
+  background-color: #4b77a0;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card.visa {
+  background-color: #777876;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card.american-express {
+  background-color: #86b8cf;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.american-express
+  .card-details
+  .card-number
+  h3 {
+  color: black;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.american-express
+  .card-details
+  .valid-detail
+  .title
+  span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.american-express
+  .card-details
+  .valid-detail
+  .date
+  h3 {
+  color: black;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.american-express
+  .card-details
+  .name-detail
+  .name
+  h5 {
+  color: black;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card.add-card {
+  background-color: #fafafa;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.add-card
+  .card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 183px;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  .payment-card.add-card
+  .card-details
+  h5 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.dashboard-box .dashboard-detail .card-payment .payment-card:hover .edit-card {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dashboard-box .dashboard-detail .card-payment .edit-card-mobile {
+  display: none;
+}
+
+.dashboard-box .dashboard-detail .card-payment > div .payment-card {
+  margin-top: 30px;
+}
+
+.dashboard-box
+  .dashboard-detail
+  .card-payment
+  > div:nth-child(-n + 3)
+  .payment-card {
+  margin-top: 0;
+}
+
+.dashboard-box .dashboard-detail .delete-section p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  color: rgba(0, 0, 0, 0.64);
+  text-transform: capitalize;
+  line-height: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-box .dashboard-detail .delete-section p .text-bold {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.dashboard-box .dashboard-detail .delete-section .btn {
+  padding: 7px 15px;
+  text-transform: capitalize;
+}
+
+.dashboard-box .dashboard-detail:last-child {
+  margin-bottom: 0;
+}
+.dashboard-box .special-section .special-box .special-img .top-icon i {
+  padding: 6px 8px;
+}
+
+.dashboard-box + .dashboard-box {
+  margin-top: 30px;
+}
+
+.dashboard-main .dashboard-intro {
+  background-color: #fafafa;
+  padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.dashboard-main .dashboard-intro h5 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.dashboard-main .dashboard-intro p {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: capitalize;
+  letter-spacing: 0.08em;
+}
+
+.dashboard-main .dashboard-intro .complete-profile {
+  margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-main .dashboard-intro .complete-profile .complete-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(222, 222, 222, 0.22);
+  box-shadow: 0 2px 4px 0 rgba(222, 222, 222, 0.22);
+}
+
+.dashboard-main .dashboard-intro .complete-profile .complete-box i {
+  margin-right: 12px;
+  color: green;
+  font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.dashboard-main .dashboard-intro .complete-profile .complete-box h6 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dashboard-main
+  .dashboard-intro
+  .complete-profile
+  .complete-box.not-complete
+  i {
+  color: red;
+}
+
+.dashboard-main .counter-section .counter-box {
+  background-color: #fafafa;
+  padding: 15px;
+  text-align: center;
+}
+
+.dashboard-main .counter-section .counter-box img {
+  width: 35px;
+  margin-bottom: 15px;
+}
+
+.dashboard-main .counter-section .counter-box h3 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.dashboard-main .counter-section .counter-box h5 {
+  color: rgba(0, 0, 0, 0.61);
+  margin-bottom: -5px;
+  text-transform: capitalize;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  margin-top: 5px;
+}
+
+.dashboard-main .dashboard-info {
+  margin-top: 25px;
+  position: relative;
+}
+
+.dashboard-main .dashboard-info #chart,
+.dashboard-main .dashboard-info .chart-box {
+  padding-top: 20px;
+  padding-left: 10px;
+  background: #fafafa;
+}
+
+.dashboard-main .dashboard-info select.flat-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #008ffb
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60px' height='60px'><polyline fill='white' points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>")
+    no-repeat scroll right 2px top 9px/16px 16px;
+  border: 0 none;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0 none;
+  height: 33px;
+  padding: 5px 20px 5px 10px;
+  text-align: center;
+  text-indent: 0.01px;
+  text-overflow: "";
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: auto;
+}
+
+.dashboard-main .dashboard-info select.flat-select:focus,
+.dashboard-main .dashboard-info select.flat-select:hover {
+  border: 0;
+  outline: 0;
+}
+
+.dashboard-main .dashboard-info .apexcharts-canvas {
+  margin: 0 auto;
+}
+
+.dashboard-main .dashboard-info path#apexcharts-radialbarTrack-0 {
+  stroke: rgba(251, 96, 122, 0.08);
+}
+
+.dashboard-main .dashboard-info path#apexcharts-radialbarTrack-1 {
+  stroke: rgba(85, 169, 248, 0.08);
+}
+
+.dashboard-main .dashboard-info path#apexcharts-radialbarTrack-2 {
+  stroke: rgba(162, 100, 255, 0.08);
+}
+
+.dashboard-main .dashboard-info .detail-left {
+  position: absolute;
+}
+
+.dashboard-main .dashboard-info .detail-left ul {
+  display: block;
+}
+
+.dashboard-main .dashboard-info .detail-left ul li {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.dashboard-main .dashboard-info .detail-left ul li span {
+  width: 14px;
+  height: 5px;
+  display: block;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.dashboard-main .dashboard-info .detail-left ul li span.completed {
+  background-color: #fa4962;
+}
+
+.dashboard-main .dashboard-info .detail-left ul li span.upcoming {
+  background-color: #379cf9;
+}
+
+.dashboard-main .dashboard-info .detail-left ul li span.cancelled {
+  background-color: #a264ff;
+}
+
+.dashboard-main .dashboard-info .activity-box {
+  padding: 20px 10px;
+  background: #fafafa;
+}
+
+.dashboard-main .dashboard-info .activity-box h6 {
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li {
+  display: block;
+  background-color: white;
+  padding: 8px 15px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li i {
+  margin-right: 6px;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li span {
+  float: right;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: red;
+  top: 0;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li.blue-line:after {
+  background-color: #03a9f4;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li.yellow-line:after {
+  background-color: #ffc107;
+}
+
+.dashboard-main .dashboard-info .activity-box ul li + li {
+  margin-top: 8px;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+.user-card .v-avatar {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  border: 3px solid #fff;
+}
+.user-card .v-card__title {
+  font-size: 18px;
+}
+.user-card .v-image .v-responsive__content {
+  width: 100% !important;
+}
+.user-card .v-card__text.info-text {
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+.user-card .v-card__text.info-text > * {
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.user-card .v-card__text.info-text i {
+  font-size: 18px;
+  display: inline-block;
+}
+.user-card .v-image__image--cover {
+  border-radius: 4px 4px 0 0;
+}
+.user-card .ribbon_3 {
+  left: -5px;
+}
+.traveller-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.traveller-list .user-card {
+  margin-bottom: 20px;
+  flex-basis: calc(33.3333333% - 20px);
+}
+.traveller-list .user-card:not(:last-child) {
+  margin-right: 25px;
+}
+
+.traveller-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+.traveller-form .form-group {
+  margin-bottom: 10px !important;
+}
+.v-dialog .v-card__title .headline {
+  font-size: 18px !important;
+  font-weight: 500;
+}

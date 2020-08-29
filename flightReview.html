@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ART</title>
+    <link rel="shortcut icon" href="./assets/logoart.gif" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  
+  </head>
+
+  <body>
+    <div id="app-2">
+    <v-app id="inspire">
+    <div class="header">
+      <div class="menu-nav animate__animated animate__slideInDown">
+        <div class="top-social-bar">
+          <ul class="social_icon col-lg-6" style="display: flex; padding: 0px;">
+            <li>
+              <a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a><i class="fa fa-youtube"></i> </a>
+            </li>
+            <li>
+              <a><i class="fa fa-instagram"></i> </a>
+            </li>
+          </ul>
+          <div
+            class="contact-details col-lg-6"
+            style="text-align: end; padding-top: 5px;"
+          >
+            <i
+              class="glyphicon glyphicon-phone-alt"
+              style="
+                color: #d91718;
+                padding-right: 5px;
+                font-size: 13px;
+                padding-top: -2px;
+                cursor: pointer;
+              "
+            >
+            </i>
+            <span style="font-size: 14px; font-weight: 500;">800278</span>
+            <span class="user">
+              <i class="fa fa-user-circle"></i>
+              <span style="font-size: 13px;">My Account</span>
+            </span>
+          </div>
+        </div>
+        <div class="top-menu-bar">
+          <div class="navigation-bar col-lg-9">
+            <ul style="display: flex; padding-left: 0px;">
+              <li>
+                <a> <i class="las la-plane ni"></i> <span>Flight</span></a>
+              </li>
+              <li>
+                <a> <i class="las la-bed ni"></i></i><span>Hotel</span></a>
+              </li>
+              <li>
+                <a> <i class="las la-mountain ni"></i><span>Holidays</span></a>
+              </li>
+              <li>
+                <a>
+                  <i class="las la-map-marked-alt ni"></i><span>UAE Attractions</span></a
+                >
+              </li>
+              <li>
+                <a> <i class="las la-hand-holding-heart ni"></i> <span>Insurance</span></a>
+              </li>
+              <li>
+                <a> <i class="las la-tags ni"></i><span>Special Offers</span></a>
+              </li>
+              <li>
+                <a> <i class="las la-comments ni"></i><span>Blogs</span></a>
+              </li>
+              <li style="width: auto;">
+                <a
+                  ><b><i class="las la-search ni"></i></b
+                  ><span>Search</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="logo col-lg-3" style="text-align: center;">
+            <div style="text-align: end;">
+              <img
+                src="./assets/logoart.gif"
+                alt="no"
+                style="padding-top: 10px;"
+              />
+              <!-- <a href="tel:+800 278" style="color:#fff;font-size: 11px;">
+      <span class="glyphicon glyphicon-phone-alt"></span>&nbsp; 800 278
+    </a> -->
+            </div>
+            <!-- <i class="glyphicon glyphicon-phone-alt" style="color: #d91718;padding-left: 55px; font-size: 13px;padding-top: 10px; cursor: pointer;"> -->
+
+            <!-- <span style="font-size: 16px; -->
+            <!-- font-weight: 800;">800278</span></i> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_container no-home">
+      <section class="breadcrumb-section flightreview-sec pt-0">
+        <img
+          src="assets/banner/banner1.jpg"
+          class="bg-img img-fluid blur-up lazyload"
+          alt=""
+        />
+        <div class="flight-details text-center">
+          <p class="route flight-count">Flight Review</p>
+          <p class="route">DUBAI (DXB) ⇌ PARIS (CDG)</p>
+          <p class="other-details">Onward : 18/08/2020 | Return : 22/08/2020</p>          
+        </div>
+        <button class="btn back-btn"><i class="las la-arrow-left"></i> Back</button>
+    </section>
+
+      <div class="container flight-container">
+        
+        <div class="row">
+            <div class="col-md-8">
+              <div class="filter-sec review-section">
+                <h4 class="filter-header"><i class="las la-plane icon-text"></i> Flight Details</h4>
+                <div class="review_box">
+                  <div class="flight_detail">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="logo-sec">
+                              <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                              <span class="title">
+                                <span class="airline">Egyptair</span>
+                                <span>G9 - G9112</span>
+                                <span>Operated by G9</span>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="col-md-7 px-0">
+                          <div class="airport-part">
+                              <div class="airport-name departure">
+                                  <h6>DXB <span>08:00</span></h6>
+                                  <p>Dubai (DXB), United Arab Emirates</p>
+                                  <p>sat, 12 oct 2020</p>
+                              </div>
+                              <div class="airport-progress">
+                                  <i class="fas fa-plane-departure"></i>
+                                  <i class="fas fa-plane-arrival"></i>
+                              </div>
+                              <div class="airport-name arrival">
+                                  <h6>CDG <span>18:45</span></h6>
+                                  <p>Paris (CDG), France</p>
+                                  <p>sat, 12 oct 2020</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="duration">
+                              <div>
+                                  <h6>10h 45m</h6>
+                                  <p>1 stop</p>
+                                  <p>Economy</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="row flight-links">
+                    <div class="col-md-4">
+                      <button type="button" class="flight-more-option" @click="flightDetailsDialog = true">
+                        <i class="las la-fighter-jet"></i> Flight Details
+                      </button>
+                    </div>
+                    <div class="col-md-8 text-right">
+                      <button type="button" class="flight-more-option" @click="baggageDetailsDialog = true">
+                        <i class="las la-suitcase"></i> Baggage Details
+                      </button>
+                      <button type="button" class="flight-more-option" @click="fareRulesDialog = true">
+                        <i class="las la-coins"></i> Full Fare Rules
+                      </button>
+                      <button type="button" class="flight-more-option" @click="fareRulesDialog = true">
+                        <i class="las la-coins"></i> Mini Fare Rules
+                      </button>
+                      <button type="button" class="flight-more-option" @click="fareDetailsDialog = true">
+                        <i class="las la-coins"></i> Fare Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-sec review-section">
+                <h4 class="filter-header"><i class="las la-hand-holding-heart icon-text"></i> Add Travel Insurance</h4>
+                <div class="review_box">
+                  <div class="alert alert-info" role="alert">
+                    The prices quoted are total prices for all travellers in your party.
+                  </div>
+                  <p v-for="(item, index) in todos">
+                    <input type="radio" v-bind:checked="item.checked" v-bind:id="'travelInsurance'+index" name="radio-group" />
+                    <label class="radio-label" v-bind:for="'travelInsurance'+index">{{item.text}}
+                      <span class="insurance-price"><span v-if="item.price">AED</span> {{item.price}}</span>
+                    </label>
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="filter-sec review-section">
+                <h4 class="filter-header">Price Breakdown</h4>
+                <div class="review_box">
+                  <div class="priceBreak">
+                    <p>Adults (1 X AED 1200)</p>
+                    <p class="amountText">AED 1200.00</p>
+                  </div>
+                  <div class="priceBreak">
+                    <p>Total Taxes</p>
+                    <p class="amountText">AED 25.00</p>
+                  </div>
+                  <div class="priceBreak">
+                    <p>Insurance</p>
+                    <p class="amountText">AED 11.00</p>
+                  </div>
+                  <div class="priceBreak">
+                    <p>Convenience Fee</p>
+                    <p class="amountText">AED 18.00</p>
+                  </div>
+                  <hr class="filter-separator"/>
+                  <div class="priceBreak grandTotal">
+                    <p>Grand Total</p>
+                    <p class="amountText">AED 1254.00</p>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-block btn-solid continue-book" v-on:click="bookNow">
+                Continue Booking
+              </button>
+            </div>
+        </div>
+
+        <template data-app>
+          <v-dialog v-model="flightDetailsDialog" max-width="70%">
+            <v-card class="flight-details-modal">
+              <v-card-title class="headline">Flight Details</v-card-title>
+              <div class="v-modal-body">
+                <v-card-text>
+                  <div class="review-section">
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">08:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Dubai (DXB), United Arab Emirates</h6>
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">10:45 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Bahrain (BAH) , Bahrain</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                    <div>
+                                        <h6>2h 45m</h6>
+                                        <p>1 stop</p>
+                                        <p>Economy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transfer-time">
+                      <p>Waiting in airport: <span>2h 15m</span></p>
+                    </div>
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">13:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Bahrain (BAH) , Bahrain</h6>
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">15:30 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Paris (CDG), France</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                    <div>
+                                        <h6>2h 30m</h6>
+                                        <p>1 stop</p>
+                                        <p>Economy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </v-card-text>
+                
+                <v-card-text>
+                  <div class="review-section">
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">08:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Dubai (DXB), United Arab Emirates</h6>
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">10:45 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Bahrain (BAH) , Bahrain</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                    <div>
+                                        <h6>2h 45m</h6>
+                                        <p>1 stop</p>
+                                        <p>Economy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transfer-time">
+                      <p>Waiting in airport: <span>2h 15m</span></p>
+                    </div>
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">13:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Bahrain (BAH) , Bahrain</h6>
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">15:30 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Paris (CDG), France</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                    <div>
+                                        <h6>2h 30m</h6>
+                                        <p>1 stop</p>
+                                        <p>Economy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </v-card-text>
+              </div>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="darken-1"
+                  text
+                  @click="flightDetailsDialog = false"
+                >
+                  Close
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+
+          <v-dialog v-model="baggageDetailsDialog" max-width="70%">
+            <v-card class="flight-details-modal">
+              <v-card-title class="headline">Baggage Details</v-card-title>
+              <div class="v-modal-body">
+                <v-card-text>
+                  <div class="review-section">
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">08:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Dubai (DXB), United Arab Emirates</h6>
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">10:45 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Paris (CDG), France</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                  <div>
+                                    <p>Adult</p>
+                                    <h6>20 KG</h6>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transfer-time">
+                      
+                    </div>
+                    <div class="review_box">
+                      <div class="flight_detail">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo-sec">
+                                    <img src="assets/flights/logos/1.png" class="img-fluid blur-up lazyloaded" alt="">
+                                    <span class="title">
+                                      <span class="airline">Egyptair</span>
+                                      <span>G9 - G9112</span>
+                                      <span>Operated by G9</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 px-0">
+                                <div class="airport-part">
+                                    <div class="airport-name departure">
+                                        <p class="dateTime">08:00 <span>on Sat, 12 oct 2020</span> </p>
+                                        <h6>Paris (CDG), France</h6>
+                                        
+                                    </div>
+                                    <div class="airport-name arrival">
+                                        <p class="dateTime">10:45 <span>on Sat, 22 oct 2020</span> </p>
+                                        <h6>Dubai (DXB), United Arab Emirates</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="duration">
+                                  <div>
+                                    <p>Adult</p>
+                                    <h6>20 KG</h6>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </v-card-text>
+              </div>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="darken-1"
+                  text
+                  @click="baggageDetailsDialog = false"
+                >
+                  Close
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+
+          <v-dialog v-model="fareDetailsDialog" max-width="60%">
+            <v-card class="flight-details-modal">
+              <v-card-title class="headline mb-0">Fare Details</v-card-title>
+              <div class="v-modal-body">
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th class="text-left">Pax Type</th>
+                        <th class="text-left">Fare per Person</th>
+                        <th class="text-left">Count</th>
+                        <th class="text-left">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Adult</td>
+                        <td>AED 1200.00</td>
+                        <td>x1</td>
+                        <td>AED 1200.00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">Promo Discount</td>
+                        <td>AED 0.00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">Total Fare</td>
+                        <td class="total-fare">AED 1200.00</td>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+              </div>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="darken-1"
+                  text
+                  @click="fareDetailsDialog = false"
+                >
+                  Close
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+
+          <v-dialog v-model="fareRulesDialog" max-width="60%">
+            <v-card class="flight-details-modal">
+              <v-card-title class="headline mb-0">Fare Rules</v-card-title>
+              <div class="v-modal-body">
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th class="text-left">Airline</th>
+                        <th class="text-left">Refund Type</th>
+                        <th class="text-left">Aircraft Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Gulf Air</td>
+                        <td>Non-Refundable</td>
+                        <td>Airbus A320</td>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+                <v-card class="rules-card">
+                  <v-card-title class="headline">RULE APPLICATION AND OTHER CONDITION</v-card-title>
+
+                  <v-card-subtitle>
+                    <p class="text-danger text-center">Fare rules not available</p>
+                  </v-card-subtitle>
+                </v-card>
+              </div>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="darken-1"
+                  text
+                  @click="fareRulesDialog = false"
+                >
+                  Close
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </template>
+      
+      </div>
+
+
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid" style="background-color: #2195c3;">
+        <div class="row" style="padding-top: 18px; padding-bottom: 24px;">
+          <div class="col-md-3" style="margin-right: 49px; padding-top: 24px;">
+            <span style="color: white; margin-left: 73px;"
+              >Subscribe Email Container</span
+            >
+          </div>
+          <div class="col-lg-1" style="margin-top: 15px;">
+            <span class="mail-icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div id="input_container" class="col-lg-4">
+            <input
+              type="text"
+              id="input"
+              value=""
+              placeholder="Your Email Address"
+            /><span class="dividerContainer"></span>
+            <i class="fa fa-paper-plane" aria-hidden="true" id="input_img"></i>
+          </div>
+          <div class="socialmediaContainer col-lg-3">
+            <span class="socialicons">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top" style="background-color: #2195c3;">
+        <div
+          class="footerLinkContainer container"
+          style="background-color: #2195c3;"
+        >
+          <div class="row">
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">Help</h3>
+
+              <div class="fontstyle">Contact Us</div>
+              <br />
+            </div>
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">General</h3>
+              <div class="fontstyle">About Us</div>
+              <div class="fontstyle">Our Services</div>
+              <div class="fontstyle">Privacy Policy</div>
+              <div class="fontstyle">Terms & Conditions</div>
+            </div>
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">Subscribe</h3>
+              <p class="fontstyle">
+                Subscribe to receive great holiday deals, inspirational content
+                and exclusive offers!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="background-color: #2195c3;">
+        <div class="container" style="max-width: 100%;">
+          <div class="row">
+            <div class="col-12">
+              <div class="bottom-inner">
+                <div class="row">
+                  <div class="col-lg-9 col-md-9 col-12">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                      <p
+                        class="fontstyle"
+                        style="color: #ffffff; font-size: 12px;"
+                      >
+                        Copyright Ⓒ 2020 by
+                        <a href="#" style="color: #ffffff; font-size: 12px;"
+                          >ART Travels.</a
+                        >
+                      </p>
+                    </div>
+                    <!--/ End Copyright -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-12 text-right">
+                    <p
+                      class="fontstyle"
+                      style="color: #ffffff; font-size: 12px;"
+                    >
+                      Powered By Convergent Technology
+                      <a href="#" class="fontstyle" style="color: white;"></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </v-app>
+</div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="assets/js/moment-with-locales.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $(".owl-carousel").owlCarousel({
+        autoPlay: 2000,
+        items: 4,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3],
+        center: true,
+        nav: true,
+        loop: true,
+        responsive: {
+          600: {
+            items: 4,
+          },
+        },
+      });
+    });
+
+    var app2 = new Vue({
+      el: '#app-2',
+      vuetify: new Vuetify(),
+      data: {
+        todos: [
+          { text: 'Travel Assurance- Gold Covid Plus Plan', price: 11.3 },
+          { text: 'Travel Assurance- Silver Covid Plus Plan', price: 5.9 },
+          { text: 'Tune Protect Travel Assurance - Platinum Plan', price: 13.3 },
+          { text: 'Tune Protect Travel Safe Assurance - Platinum Plan (Return Plan)', price: 1.5 },
+          { text: 'Tune Protect Travel Cancellation Assurance - Platinum Plan', price: 5.4 },
+          { text: 'Tune Protect Travel Baggage Assurance - Platinum Plan',  price: 5.4},
+          { text: 'I have my own travel insurance', checked:true },
+        ],
+        flightDetailsDialog: false,
+        baggageDetailsDialog: false,
+        fareDetailsDialog: false,
+        fareRulesDialog: false,
+      },
+      methods: {
+        bookNow: function(event) {
+          window.location = "flightItenary.html";
+        }
+      }
+    })
+  </script>
+</html>

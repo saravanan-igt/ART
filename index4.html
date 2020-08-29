@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ART</title>
+    <link rel="shortcut icon" href="./assets/logoart.gif" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="menu-nav">
+        <div class="top-social-bar">
+          <ul class="social_icon col-lg-6" style="display: flex; padding: 0px;">
+            <li>
+              <a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a><i class="fa fa-youtube"></i> </a>
+            </li>
+            <li>
+              <a><i class="fa fa-instagram"></i> </a>
+            </li>
+          </ul>
+          <div
+            class="contact-details col-lg-6"
+            style="text-align: end;"
+          >
+            <i
+              class="glyphicon glyphicon-phone-alt"
+              style="
+                color: #d91718;
+                padding-right: 5px;
+                font-size: 13px;
+                padding-top: -2px;
+                cursor: pointer;
+              "
+            >
+            </i>
+            <span style="font-size: 14px; font-weight: 500;">800278</span>
+            <span class="user">
+              <i class="fa fa-user-circle"></i>
+              <span style="font-size: 13px;">My Account</span>
+            </span>
+          </div>
+        </div>
+        <div class="top-menu-bar">
+          <div class="navigation-bar col-lg-10">
+            <ul>
+              <li>
+                <a class="active" data-search="#flight_search"><i class="las la-plane ni"></i> <span>Flight</span></a>
+              </li>
+              <li>
+                <a data-search="#hotel_search"> <i class="las la-bed ni"></i></i><span>Hotel</span></a>
+              </li>
+              <li>
+                <a data-search="#holiday_search"> <i class="las la-mountain ni"></i><span>Holidays</span></a>
+              </li>
+              <li>
+                <a data-search="#insurance_search"> <i class="las la-hand-holding-heart ni"></i> <span>Insurance</span></a>
+              </li>
+              <li>
+                <a><i class="las la-map-marked-alt ni"></i><span>UAE Attractions</span></a>
+              </li>
+              
+              <li>
+                <a> <i class="las la-tags ni"></i><span>Special Offers</span></a>
+              </li>
+              <li>
+                <a> <i class="las la-comments ni"></i><span>Blogs</span></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                  <i class="las la-comments ni"></i><span>Our Services</span>
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Corporate Travel</a></li>
+                  <li><a href="#">MICE Services</a></li>
+                  <li><a href="#">Wellness</a></li>
+                  <li><a href="#">Air Miles</a></li>
+                </ul>
+              </li>
+              <li style="width: auto;">
+                <a
+                  ><b><i class="las la-search ni"></i></b
+                  ><span>Search</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="logo col-lg-2">
+            <img src="./assets/logoart.gif" alt="Logo" />
+          </div>
+        </div>
+        <div id="roundTrip" class="top-search-bar tab-pane fadein active">
+          <div class="single-line-search-form" id="flight_search">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-departure"></i>
+              </span>
+              <input
+                type="text"
+                id="from_place"
+                required=""
+                name="from_place"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying from"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-arrival"></i>
+              </span>
+              <input
+                type="text"
+                required=""
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying to"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-calendar-day"></i>
+              </span>
+              <input
+                type="text"
+                id="departure"
+                name="dates"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Departure - Arrival Date"
+                autofocus=""
+              />
+            </div>
+            <div class="pax-container">
+              <div class="input-group" id="paxInputField">
+                <span class="input-group-addon">
+                  <i class="las la-user-alt"></i>
+                </span>
+                <p class="form-control">Passengers: <span id="paxCountField">0</span></p>
+              </div>
+              <div class="paxCountContentDiv">
+                <div class="paxCountContent">
+                  <div class="form-group">
+                        <label class="control-label col-md-5"><strong>Adult</strong><br> <i> (above 17)</i></label>
+                        <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-md-5"><strong>Child</strong><br> <i> (3 - 17)</i></label>
+                      <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-md-5"><strong>Infant</strong><br> <i> (belove 2)</i></label>
+                      <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <a class="btn btn-default btn-block demise-paxCount">Close</a>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg custom-search-btn">
+              SEARCH
+            </button>
+          </div>
+
+          <div class="single-line-search-form hide" id="hotel_search">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-map-marker"></i>
+              </span>
+              <input
+                type="text"
+                id="hotel_destination"
+                required=""
+                name="hotel_destination"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Destination City"
+                autofocus=""
+              />
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-calendar-day"></i>
+              </span>
+              <input
+                type="text"
+                id="hotel_date"
+                name="hotel_date"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Checkin - Checkout Date"
+                autofocus=""
+              />
+            </div>
+            <div class="pax-container hotel-rooms">
+              <div class="input-group" id="hotel_paxInputField">
+                <span class="input-group-addon">
+                  <i class="las la-user-alt"></i>
+                </span>
+                <p class="form-control">Passengers: <span id="hotel_paxCountField">0</span></p>
+              </div>
+              <div class="paxCountContentDiv hotel_paxCountContentDiv">
+                <div class="paxCountContent">
+                  <div class="hotel-container labels">
+                    <label>Rooms</label>
+                    <label>Adults</label>
+                    <label>Child</label>
+                    <label>Child 1 Age</label>
+                    <label>Child 2 Age</label>
+                    <label class="btn"></label>
+                  </div>
+                  <div class="hotel-container">
+                    <label>Room 1</label>
+                    <select class="form-control">
+                      <option value="1">1</option>
+                      <option value="2" selected="selected">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="1" selected="selected">1</option>
+                      <option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="1" selected="selected">1</option>
+                      <option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                    </select>
+                    <button type="button" class="btn btn-danger"><i class="las la-trash"></i></button>
+                  </div>
+                  <div class="hotel-container-footer">
+                    <button type="button" class="btn btn-default">Add Room</button>
+                    <a href="#" class="btn btn-default demise-paxCount">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-group hotel-promocode">
+              <span class="input-group-addon">
+                <i class="las la-percentage"></i>
+              </span>
+              <input
+                type="text"
+                id="promocode"
+                name="promo"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Promocode"
+                autofocus=""
+              />
+            </div>
+            <button type="submit" class="btn btn-lg custom-search-btn">
+              SEARCH
+            </button>
+          </div>
+
+          <div class="single-line-search-form hide" id="holiday_search">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-departure"></i>
+              </span>
+              <input
+                type="text"
+                id="holiday_from_place"
+                required=""
+                name="holiday_from_place"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying from"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-arrival"></i>
+              </span>
+              <input
+                type="text"
+                required=""
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying to"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-map-marker"></i>
+              </span>
+              <input
+                type="text"
+                required=""
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Hotel City"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-calendar-day"></i>
+              </span>
+              <input
+                type="text"
+                id="holiday_date"
+                name="dates"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Departure - Arrival Date"
+                autofocus=""
+              />
+            </div>
+            <div class="pax-container">
+              <div class="input-group" id="hotel_paxInputField">
+                <span class="input-group-addon">
+                  <i class="las la-user-alt"></i>
+                </span>
+                <p class="form-control">Passengers: <span id="hotel_paxCountField">0</span></p>
+              </div>
+              <div class="paxCountContentDiv hotel_paxCountContentDiv">
+                <div class="paxCountContent">
+                  <div class="hotel-container labels">
+                    <label>Rooms</label>
+                    <label>Adults</label>
+                    <label>Child</label>
+                    <label>Child 1 Age</label>
+                    <label>Child 2 Age</label>
+                    <label class="btn"></label>
+                  </div>
+                  <div class="hotel-container">
+                    <label>Room 1</label>
+                    <select class="form-control">
+                      <option value="1">1</option>
+                      <option value="2" selected="selected">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="1" selected="selected">1</option>
+                      <option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                    </select>
+                    <select class="form-control">
+                      <option value="1" selected="selected">1</option>
+                      <option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                    </select>
+                    <button type="button" class="btn btn-danger"><i class="las la-trash"></i></button>
+                  </div>
+                  <div class="hotel-container-footer">
+                    <button type="button" class="btn btn-default">Add Room</button>
+                    <a href="#" class="btn btn-default demise-paxCount">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg custom-search-btn">
+              SEARCH
+            </button>
+          </div>
+
+          <div class="single-line-search-form hide" id="insurance_search">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-departure"></i>
+              </span>
+              <input
+                type="text"
+                id="insurance_from_place"
+                required=""
+                name="insurance_from_place"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying from"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-plane-arrival"></i>
+              </span>
+              <input
+                type="text"
+                required=""
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Flying to"
+                autofocus=""
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="las la-calendar-day"></i>
+              </span>
+              <input
+                type="text"
+                id="insurance_date"
+                name="dates"
+                class="form-control ui-autocomplete-input valid"
+                placeholder="Departure - Arrival Date"
+                autofocus=""
+              />
+            </div>
+            <div class="pax-container">
+              <div class="input-group" id="paxInputField">
+                <span class="input-group-addon">
+                  <i class="las la-user-alt"></i>
+                </span>
+                <p class="form-control">Passengers: <span id="paxCountField">0</span></p>
+              </div>
+              <div class="paxCountContentDiv">
+                <div class="paxCountContent">
+                  <div class="form-group">
+                        <label class="control-label col-md-5"><strong>Adult</strong><br> <i> (above 17)</i></label>
+                        <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-md-5"><strong>Child</strong><br> <i> (3 - 17)</i></label>
+                      <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-md-5"><strong>Infant</strong><br> <i> (belove 2)</i></label>
+                      <input type="number" class="paxCount" value="0" min="0" max="9" step="1"/>
+                  </div>
+                  <a class="btn btn-default btn-block demise-paxCount">Close</a>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg custom-search-btn">
+              SEARCH
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_container">
+      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              src="./assets/banner/uaevisaeng.jpg"
+              alt="New york"
+              style="width: 100%; height: 450px;"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/banner/banner3.jpg"
+              alt="Los Angeles"
+              style="width: 100%; height: 450px;"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="./assets/banner/banner4.jpg"
+              alt="Chicago"
+              style="width: 100%; height: 450px;"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/banner/banner1.jpg"
+              alt="Los Angeles"
+              style="width: 100%; height: 450px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Packages container-fluid" style="margin-top: 20px;">
+      <h3 class="main_title">
+        Special Packages
+      </h3>
+      <div class="title col-lg-3">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3 popular"><span>Popular</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/slider10.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Winter Packages</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3"><span>Top rated</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages7.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Globus Journeys</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3 popular"><span>Popular</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages1.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Cosmos Vacations</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3 popular"><span>Popular</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages2.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Thomas Cook Holidays</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3" style="margin-top: 25px;">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3"><span>Top rated</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages3.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Special Holiday Packages</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3" style="margin-top: 25px;">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3 popular"><span>Popular</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/Cruise Thumbnail.png"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Cruises</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3" style="margin-top: 25px;">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3"><span>Top rated</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages4.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>Unique Itineraries</h4>
+            <h5 class="amount">255 <small>AED</small></h5> 
+          </div>
+        </div>
+      </div>
+      <div class="title col-lg-3" style="margin-top: 25px;">
+        <div class="hvr animate__animated animate__zoomIn">
+          <div class="ribbon_3"><span>Top rated</span></div>
+          <div class="hvrbox">
+            <img
+              src="./assets/slider/packages5.jpg"
+              alt="Mountains"
+              class="hvrbox-layer_bottom"
+            />
+          </div>
+          <div class="package_footer">
+            <h4>UAE Staycations</h4>
+            <h5 class="amount">255 <small>AED</small></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider services-bg">
+      <div class="page-content page-container" id="page-content">
+        <div class="padding">
+          <div class="row container-fluid">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body services_offered">
+                  <h3 class="main_title">Offered Services</h3>
+                  <div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <img src="./assets/services/corporateTravel.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Corporate Travel</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/mice.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>MICE Services</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/wellness.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Wellness</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/airmile.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Air Miles</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/corporateTravel.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Corporate Travel</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/mice.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>MICE Services</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/wellness.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Wellness</h4>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="./assets/services/airmile.png" alt="Avatar" />
+                      <div class="card_head">
+                        <h4>Air Miles</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="page-content page-container" id="page-content">
+        <div class="padding">
+          <div class="row container-fluid">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="main_title">Principal Products</h3>
+                  <div class="owl-carousel principal-products">
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Rail_Europe_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Rail_Europe_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Access fares, schedules and maps of all trains and
+                              book with the #1 distributor of rail tickets.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Globus_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Globus_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Attractive prices, memorable events, and
+                              enchanting tours: just pack your bags and go!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Monograms_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Monograms_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Monograms allows you the chance to discover new
+                              places independently, in your own style.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Avalon_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Avalon_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              With Avalon Waterways, you get to choose the river
+                              cruise that reveals the very best of Europe,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/interhome_logo_1.jpg"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/interhome_tab.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Feel at home away from home with Interhome holiday
+                              houses and apartments.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Rail_Europe_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Rail_Europe_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Access fares, schedules and maps of all trains and
+                              book with the #1 distributor of rail tickets.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Globus_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Globus_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Attractive prices, memorable events, and
+                              enchanting tours: just pack your bags and go!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Monograms_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Monograms_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Monograms allows you the chance to discover new
+                              places independently, in your own style.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/Avalon_Logo.png"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/Avalon_PL.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              With Avalon Waterways, you get to choose the river
+                              cruise that reveals the very best of Europe,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div
+                        class="card_head"
+                        style="text-align: -webkit-center;"
+                      >
+                        <img
+                          src="./assets/slider/interhome_logo_1.jpg"
+                          alt="image"
+                          style="width: auto;"
+                        />
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img
+                              src="./assets/slider/interhome_tab.jpg"
+                              alt="Avatar"
+                            />
+                          </div>
+                          <div class="flip-card-back">
+                            <p>
+                              Feel at home away from home with Interhome holiday
+                              houses and apartments.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid" style="background-color: #2195c3;">
+        <div class="row" style="padding-top: 18px; padding-bottom: 24px;">
+          <div class="col-md-3" style="margin-right: 49px; padding-top: 24px;">
+            <span style="color: white; margin-left: 73px;"
+              >Subscribe Email Container</span
+            >
+          </div>
+          <div class="col-lg-1" style="margin-top: 15px;">
+            <span class="mail-icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div id="input_container" class="col-lg-4">
+            <input
+              type="text"
+              id="input"
+              value=""
+              placeholder="Your Email Address"
+            /><span class="dividerContainer"></span>
+            <i class="fa fa-paper-plane" aria-hidden="true" id="input_img"></i>
+          </div>
+          <div class="socialmediaContainer col-lg-3">
+            <span class="socialicons">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </span>
+            <span class="socialicons">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top" style="background-color: #2195c3;">
+        <div
+          class="footerLinkContainer container"
+          style="background-color: #2195c3;"
+        >
+          <div class="row">
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">Help</h3>
+
+              <div class="fontstyle">Contact Us</div>
+              <br />
+            </div>
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">General</h3>
+              <div class="fontstyle">About Us</div>
+              <div class="fontstyle">Our Services</div>
+              <div class="fontstyle">Privacy Policy</div>
+              <div class="fontstyle">Terms & Conditions</div>
+            </div>
+            <div class="links-content col-lg-4" style="padding-left: 66px;">
+              <h3 class="footerHeading">Subscribe</h3>
+              <p class="fontstyle">
+                Subscribe to receive great holiday deals, inspirational content
+                and exclusive offers!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="background-color: #2195c3;">
+        <div class="container" style="max-width: 100%;">
+          <div class="row">
+            <div class="col-12">
+              <div class="bottom-inner">
+                <div class="row">
+                  <div class="col-lg-9 col-md-9 col-12">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                      <p
+                        class="fontstyle"
+                        style="color: #ffffff; font-size: 12px;"
+                      >
+                        Copyright Ⓒ 2020 by
+                        <a href="#" style="color: #ffffff; font-size: 12px;"
+                          >ART Travels.</a
+                        >
+                      </p>
+                    </div>
+                    <!--/ End Copyright -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-12 text-right">
+                    <p
+                      class="fontstyle"
+                      style="color: #ffffff; font-size: 12px;"
+                    >
+                      Powered By Convergent Technology
+                      <a href="#" class="fontstyle" style="color: white;"></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap-input-spinner.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('input[name="dates"]').daterangepicker();
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin:15,
+          nav: true,
+          dots: true,
+          autoPlay: 2000,
+          items: 4,
+          itemsDesktop: [1199, 4],
+          itemsDesktopSmall: [979, 4],
+          center: true
+      });
+
+      $("[data-search").click(function() {
+        let self = $(this), search_id = $(self.attr('data-search'));
+        $("[data-search").removeClass('active');
+        self.addClass('active');
+        $('.single-line-search-form').addClass('hide');
+        search_id.removeClass('hide').addClass("animate__animated").addClass("animate__flipInX");
+      })
+
+      $('.dropdown').hover(function(event){
+        event.preventDefault();
+        var dropdown = $(this).closest(".dropdown");
+        $(dropdown).toggleClass("open");
+      });
+
+      var paxCountDropdown = function() {
+        let paxInput = $('input[type="number"]');
+        paxInput.inputSpinner();
+        paxInput.each(function(index, item) {
+          $(item).on("change", function (event) {
+            let count = Number($(paxInput[0]).val()) + Number($(paxInput[1]).val()) + Number($(paxInput[2]).val())
+            $("#paxCountField").html(count)
+          })
+        });
+        $("#paxInputField, #hotel_paxInputField").click(function() {
+          let paxContainer = $(this).closest('.pax-container');
+          console.log('paxContainer', $(".paxCountContentDiv", paxContainer));
+          $(".paxCountContentDiv", paxContainer).slideToggle().addClass("animate__animated").addClass("animate__flipInX");
+        })
+        $(".demise-paxCount").click(function() {
+          $(".paxCountContentDiv").hide()
+        });
+
+        $(document).click(function(e) {
+          if( !$(e.target).closest('#paxInputField').length && !$(e.target).closest('#hotel_paxInputField').length && !$(e.target).closest('.paxCountContentDiv').length) {
+            $(".paxCountContentDiv").hide();
+          }
+        });
+      }
+      paxCountDropdown();
+      
+    });
+    
+  </script>
+</html>
